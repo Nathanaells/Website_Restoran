@@ -1,0 +1,177 @@
+/* Mengatur dasar HTML dan body agar tidak ada margin atau padding tambahan */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* Container utama agar halaman tetap full height */
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+
+}
+
+.menu-title {
+    margin-top: 50px;
+    font-size: 40px;
+}
+
+
+/* Tombol Back */
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Container Menu */
+.menu-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+/* Kartu Menu */
+.menu-item-card {
+    position: absolute;
+    width: 280px;
+    background: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+/* Item yang sedang aktif */
+.menu-item-card.active {
+    transform: scale(1);
+    opacity: 1;
+    z-index: 2;
+}
+
+/* Item di kiri dan kanan */
+.menu-item-card:not(.active) {
+    transform: scale(0.8);
+    opacity: 0.5;
+    z-index: 1;
+}
+
+/* Gambar dalam menu */
+.menu-content img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Tombol Order */
+.order-button {
+    background: #ff6600;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    padding: 10px 30px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: opacity 0.3s ease-in-out;
+    /* Tambahkan transisi */
+}
+
+.order-button:hover {
+    opacity: 0.5;
+}
+
+
+@keyframes fadeOpacity {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.5;
+    }
+}
+
+
+/* Navigasi */
+.navigation {
+    margin-top: 20px;
+}
+
+.navigation button {
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    margin: 0 15px;
+}
+
+
+/* Tombol Back */
+.back-button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.back-button:hover {
+    background-color: #222;
+}
+
+/* Tombol switch antara Makanan dan Minuman */
+.toggle-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.toggle-buttons button {
+    background: lightgray;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.toggle-buttons button.active {
+    background: #ff6600;
+    color: white;
+    font-weight: bold;
+}
+
+.menu-title {
+    margin-bottom: 0px;
+}
+
+.checkout-button {
+
+    position: static;
+    background-color: #ff6600;
+    border: none;
+    color: white;
+    font-size: 20px;
+    width: 200px;
+    align-self: center;
+    font-weight: bold;
+    padding: 20px 20px;
+    border-radius: 40px;
+    margin-bottom: 50px;
+}

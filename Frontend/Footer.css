@@ -1,0 +1,76 @@
+.footer {
+  background-color: #222;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: relative;
+  color: white;
+  text-align: center;
+  padding: 15px 20px;
+  width: 100%;
+  z-index: 1000;
+  margin-top: auto; /* Mendorong footer ke bawah */
+}
+
+
+/* Kontainer dalam footer */
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+/* Informasi Kontak */
+.contact-info span {
+  margin-right: 15px;
+  font-size: 14px;
+}
+
+/* Ikon Sosial Media */
+.social-icons {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.social-icons svg {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  margin: 0 10px;
+}
+
+.social-icons svg:hover {
+  transform: scale(1.2);
+}
+
+/* Link Footer */
+.footer-links {
+  margin-top: 10px;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+/* Copyright */
+.copyright {
+  font-size: 10px;
+  margin-top: 10px;
+  opacity: 0.8;
+}
+
+.text-Footer {
+  font-size: 14px;
+  font-weight: bold;
+}
+/* Pastikan `html`, `body`, dan `#root` mengisi seluruh tinggi layar */

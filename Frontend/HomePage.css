@@ -1,0 +1,105 @@
+/* Efek transisi konten */
+.content {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-out {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Styling tambahan */
+.title {
+  font-size: 80px;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: -30px;
+  animation: fadeInText 1.5s ease-in-out;
+}
+
+.subtitle {
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 30px;
+  animation: fadeInText 2s ease-in-out;
+}
+
+.logo {
+  display: block;
+  margin: 20px auto;
+  width: 400px;
+  height: auto;
+  animation: fadeInText 2.5s ease-in-out;
+}
+
+.menu-button {
+  display: block;
+  margin: 20px auto;
+  padding: 20px 40px;
+  font-size: 25px;
+  font-weight: 700;
+  border-radius: 200px;
+  cursor: pointer;
+  border: none;
+  background-color: black;
+  color: white;
+  transition: background-color 0.3s;
+  animation: fadeInText 2.5s ease-in-out;
+}
+
+.menu-button:hover {
+  background-color: gray;
+}
+
+/* Animasi teks agar muncul perlahan */
+@keyframes fadeInText {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.description {
+  font-size: 20px;
+  color: #666;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 50px;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  animation: fadeInText 3s ease-in-out;
+}
+
+.footer-container {
+  transition: opacity 0.5s ease, height 0.5s ease;
+  opacity: 1;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  bottom: 0;
+  
+}
+
+.footer-hidden {
+  opacity: 0; /* Footer tidak terlihat saat pertama kali */
+  height: 0; /* Footer tidak mengambil ruang */
+  overflow: hidden;
+}
+
+.footer-visible {
+  opacity: 1; /* Footer muncul dengan transisi */
+  height: auto;
+}

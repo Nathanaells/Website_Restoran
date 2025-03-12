@@ -1,0 +1,40 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+button {
+  margin: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.menu-container,
+.checkout-container,
+.portfolio-container {
+  margin-top: 50px;
+}
+html{
+  overflow-x: hidden;
+}
+
+* {
+  user-select: none;
+  outline: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+*:focus {
+  outline: none;
+}
+
+button, a {
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+input, textarea {
+  user-select: auto;
+  pointer-events: auto;
+}

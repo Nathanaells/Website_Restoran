@@ -1,0 +1,51 @@
+/* Pastikan seluruh halaman memenuhi tinggi penuh */
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container utama agar halaman tetap memenuhi layar */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  /* Gunakan viewport height agar halaman penuh */
+}
+
+/* Pastikan konten utama bisa bertambah jika kontennya banyak */
+.main-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+}
+
+/* Footer tetap di bawah tetapi mengikuti isi halaman */
+.footer {
+  background-color: #222;
+  left: 0;
+  right: 0;
+  color: white;
+  text-align: center;
+  padding: 15px 20px;
+  width: 100%;
+  z-index: 1000;
+  margin-top: auto;
+  /* Pastikan footer tetap di bawah */
+}
+
+/* Tambahan untuk menjaga konsistensi tampilan footer */
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
